@@ -1,0 +1,431 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+/*
+=================================
+============ NOMBRE =============
+=================================
+*/
+.nombre-estudiante {
+  height: 40px;
+  font-size: quicksand;
+  position: relative;
+}
+
+.input-nombre {
+  color: #88898c;
+  background-color: #f4f7fb;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Quicksand';
+  height: 35px;
+  outline: none;
+  padding: 8px 0px 0px 7px;
+  width: 250px;
+}
+#nombre {
+  color: #7386ad;
+  font-size: 20px;
+  left: 12px;
+  pointer-events: none;
+  position: absolute;
+  top: 8px;
+}
+
+.input-nombre:focus + #nombre, .input-nombre:valid + #nombre {
+  transition: all 0.3s ease-in-out;
+  top: 1px;
+  left: 7px;
+  font-size: 17px;
+}
+
+/*
+=================================
+=========== FIN NOMBRE ==========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ APELLIDO ===========
+=================================
+*/
+
+.apellido-estudiante {
+  position: relative;
+  height: 40px;
+}
+
+.input-apellido {
+  color: #88898c;
+  background-color: #f4f7fb;
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px 0px 0px 7px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-family: 'Quicksand';
+}
+
+#apellido {
+  font-size: 20px;
+  color: #7386ad;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  pointer-events: none;
+}
+
+
+
+.input-apellido:focus + #apellido, .input-apellido:valid + #apellido {
+  transition: all 0.3s ease-in-out;
+  top: 1px;
+  left: 7px;
+  font-size: 17px;
+}
+
+
+/*
+=================================
+========== FIN APELLIDO =========
+=================================
+*/ 
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ TELEFONO ===========
+=================================
+*/
+
+.cont-telefono {
+  position: relative;
+  height: 40px;
+}
+
+.input-telefono {
+  
+  color: #88898c;
+  background-color: #f4f7fb;
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 0px 0px 7px;
+  border: none;
+  outline: none;
+  font-family: 'Quicksand';
+}
+
+#telefono {
+  font-size: 20px;
+  color: #7386ad;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  pointer-events: none;
+}
+
+
+.input-telefono:focus + #telefono, .input-telefono:valid + #telefono {
+  transition: all 0.3s ease-in-out;
+  top: 1px;
+  left: 7px;
+  font-size: 17px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+=================================
+========== FIN TELEFONO =========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ DIRECCION ===========
+=================================
+*/
+
+.cont-direccion {
+  position: relative;
+  height: 40px;
+}
+
+.input-direccion {
+  color: #88898c;
+  background-color: #f4f7fb;
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px 0px 0px 7px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-family: 'Quicksand';
+}
+
+#direccion {
+  font-size: 20px;
+  color: #7386ad;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  pointer-events: none;
+}
+
+.input-direccion:focus + #direccion, .input-direccion:valid + #direccion {
+  transition: all 0.3s ease-in-out;
+  top: 1px;
+  left: 7px;
+  font-size: 17px;
+}
+
+/*
+=================================
+========== FIN DIRECCION ========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ EMAIL ===========
+=================================
+*/
+
+.cont-email {
+  position: relative;
+  height: 40px;
+}
+
+.input-email {
+  color: #88898c;
+  background-color: #f4f7fb;
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px 0px 0px 7px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-family:'Quicksand';
+}
+
+#email {
+  font-size: 20px;
+  color: #7386ad;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  pointer-events: none;
+}
+
+.input-email:focus + #email, .input-email:valid + #email {
+  transition: all 0.3s ease-in-out;
+  top: 1px;
+  left: 7px;
+  font-size: 17px;
+}
+
+/*
+=================================
+========== FIN EMAIL ============
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ FECHA NAC ==========
+=================================
+*/
+
+.cont-date {
+  border-radius: 4px;
+  width: 250px;
+  height: 30px;
+}
+
+#fecha {
+  border-radius: 4px;
+  font-family: 'Quicksand';
+  padding: 8px 0px 0px 7px;
+  width: 250px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #88898c;
+  background-color: #f4f7fb;
+}
+
+/*
+=================================
+========== FIN FECHA ============
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+==== TERMINOS Y CONDICIONES =====
+=================================
+*/
+
+/* estilos para el contenedor, en cuanto a tamaños y posicion */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 24px;
+  
+}
+
+/* los estilos aqui afectaran al input, a quien le damos el tamaño mas pequeño 
+para ocultarlo y poder */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* apariencia de nuestro cuadro, sera el que se mire y haga la transicion de un lado a otro  
+  todos los estilos aqui afectaran al contenedor principal 
+*/
+.slider {
+  box-shadow: 2px 2px 1px #0757a7 inset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #007af8;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 18px;
+}
+
+/* este el circulo interno que hara la transicion de ir de un lado al otro 
+  todos los estilos de aqui afectaran al circulo interno
+*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  left: 4px;
+  bottom: 4px;
+  box-shadow: 2px 1px 1px #0757a7;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  box-shadow: -2px 2px 1px rgb(148, 11, 11) inset;
+  background-color: rgb(211, 14, 14);
+}
+
+
+input:checked + .slider:before {
+  box-shadow: -2px 1px 1px rgb(148, 11, 11);
+  transform: translateX(11px);
+}
+
+.slider:hover {
+  cursor: pointer;
+}
+
+.switch-content {
+  color: white;
+}
+
+/*
+=================================
+========== FIN TERMINOS =========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+========= BOTON ENVIAR  =========
+=================================
+*/
+
+.send-form {
+  width: 38%;
+  font-family: 'Quicksand';
+  font-size: 17px;
+  color: white;
+  border-radius: 50px;
+  padding: 9px;
+  border: none;
+  background-color: #007af8;
+}
+
+/*
+=================================
+========== FIN BOTON ============
+=================================
+*/
+
+/* ---------------------------------------------------- */
+/* --------------------MEDIA QUERYS-------------------- */
+/* ---------------------------------------------------- */
+
+@media (max-width: 320px) {
+
+  .input-nombre {
+    width: 235px;
+    height: 30px;
+  }
+
+  .input-apellido {
+    width: 235px;
+    height: 30px;
+  }
+
+  .input-telefono {
+    width: 235px;
+    height: 30px;
+  }
+
+  .input-direccion {
+    width: 235px;
+    height: 30px;
+  } 
+
+  .input-email {
+    width: 235px;
+    height: 30px;
+  }
+
+  .cont-date {
+    width: 260px;
+    height: 30px;
+    margin-bottom: 2rem;
+  }
+}
+
+  

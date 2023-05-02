@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url(Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+html {margin: 0;}
+
+.tabl {
+  font-family: quicksand;
+  width: 50%;
+  height: 257px;
+  overflow-y: scroll ;
+  overflow-x: hidden;
+}
+
+.table-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+  justify-content: center;
+  width: 100%;
+}
+
+th,
+td,
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: black;
+  background-color: #f0f5fc;
+  padding: 10px;
+  position: sticky;
+  text-align: start;
+  top: 0;
+} 
+
+th:first-child {border-radius: 2px 0px 0px 0px;}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+ 
+td {padding: 10px;}
+
+h1 { font-family: 'Quicksand';
+     text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f0f5fc;
+  border-radius: 4px;
+}
+
+/*
+=================================
+=========== CHECKBOX ============
+=================================
+*/
+
+/* .content {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.content input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.mark {
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccd3dd; 
+  box-shadow: 1px 1px 2px #f0f5fc inset;
+}
+
+.content:hover input ~ .mark {
+  background-color: #9ea2a8;
+  box-shadow: 2px 2px 4px #cdd1d6 inset;
+}
+
+.content input:checked ~ .mark {
+  box-shadow: none;
+  background-color: rgb(211, 14, 14);
+}
+
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.content input:checked ~ .mark:after {
+  display: block;
+}
+
+.content .mark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+th input {display: none;}
+
+#checker {
+  font-size: 14px;
+  padding-left: 1.3rem;
+  position: relative;
+}
+
+#checker:before {
+  content: '';
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 1em;
+  left: 3px;
+  position: absolute;
+  top: 0.1em;
+  width: 1em;
+}
+
+th input:checked + #checker:before  {
+  background-color: blue;
+  border: 1px solid blue;
+  border-radius: 50%;
+  box-shadow: 3px 2px 3px rgb(1, 1, 206) inset;
+}
+
+/*
+=================================
+============ FIN TABLA ==========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ SKELETON ===========
+=================================
+*/
+
+#skeleton {
+  border-radius: 5px;
+  position: fixed;
+  top: 40%;  
+  left: 25%;
+  width: 50%;
+  height: 260px;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3s ease-in-out infinite pulse;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f2f2f2;
+  }
+  50% {
+    background-color: #dddcdc;
+  }
+  100% {
+    background-color: #f2f2f2;
+  }
+}
+
+
+
+#skeleton-h1 {
+  border-radius: 5px;
+  position: fixed;
+  top: 34%;  
+  left: 42%;
+  width: 17%;
+  height: 33px;
+  background-color: #f2f2f2;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3s ease-in-out infinite pulse-2;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes pulse-2 {
+  0% {
+    background-color: #f2f2f2;
+  }
+  50% {
+    background-color: #dddcdc;
+  }
+  100% {
+    background-color: #f2f2f2;
+  }
+}
+
+/*
+=================================
+========= FIN SKELETON ==========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============ MEDIA ==============
+=================================
+*/
+
+@media (max-width: 1178px) {
+  .tabl {width: 100%;}
+}
+
+@media (max-width: 592px) {
+  .tabl {width: 100%;}
+} 
+
+@media (max-width: 320px) {
+
+  body {margin: 0;}
+
+  th {width: 100px;}
+
+  .tabl {
+    overflow-x: scroll;
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  #skeleton {
+    animation: 3s ease-in-out infinite pulse;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+    height: 260px;
+    justify-content: center;
+    left: 25%;
+    position: fixed;
+    top: 37%;  
+    transition: opacity 0.5s ease-in-out;
+    width: 50%;
+    z-index: 9999;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #f2f2f2;
+    }
+    50% {
+      background-color: #dddcdc;
+    }
+    100% {
+      background-color: #f2f2f2;
+    }
+  }
+  
+  #skeleton-h1 {
+    animation: 3s ease-in-out infinite pulse-2;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    left: 38%;
+    position: fixed;
+    top: 29%;  
+    transition: opacity 0.5s ease-in-out;
+    width: 25%;
+    z-index: 9999;
+  }
+}

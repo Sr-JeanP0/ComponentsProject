@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="StudentRegister.css">
+  <link rel="stylesheet" href="Nombre-Apellido-Telefono.css">
+  <title>Registro de estudiante</title>
+</head>
+<body>
+
+  <main class="main">  
+
+      <div class="alerta"></div>
+      <section class="form">
+
+        <h1>COLEGIO RED <span id="name-school">5G</span> </h1>
+        
+        <div class="nombre-estudiante">
+          <input type="text" class="input-nombre" id="nombre-id" required >
+          <label id="nombre">Nombre</label>
+        </div> 
+        <label for="" class="ocultar" id="ocultarN">Nombre invalido</label>
+        
+        <div class="apellido-estudiante">
+          <input type="text" class="input-apellido" id="apellido-id" required >
+          <label id="apellido">Apellido</label>
+        </div> 
+        <label for="" class="ocultar" id="ocultarA">Apellido invalido</label>
+        
+        <div class="cont-telefono">
+          <input type="number" class="input-telefono" id="telefono-id" required >
+          <label id="telefono">Telefono</label>
+        </div> 
+        <label for="" class="ocultar" id="ocultarT">Numero invalido</label>
+        
+        <div class="cont-direccion">
+          <input type="text" class="input-direccion" id="direccion-id" required >
+          <label id="direccion">Direccion</label>
+        </div> 
+        <label for="" class="ocultar" id="ocultarD">Direccion invalido</label>
+        
+        <div class="cont-email">
+          <input type="text" class="input-email" id="email-id" required >
+          <label id="email">Email</label>
+        </div>
+        <label for="" class="ocultar" id="ocultarE">Email invalido</label>
+        
+        <div class="cond-btt">
+  
+        <div class="switch-content">  
+          <label class="switch"> 
+            <input type="checkbox"> 
+            <span class="slider"></span> 
+          </label>
+          Acepto terminos y condiciones
+        </div> 
+          
+          <button class="send-form" onclick="validarFormulario()">Registrar</button>
+        </div>
+        
+      </section>
+
+  </main>
+</body>
+</html>
+<script src="Validar-Form.js"></script>  
+

@@ -1,0 +1,134 @@
+@font-face {
+  font-family: Quicksand;
+  src: url('Quicksand/Quicksand-VariableFont_wght.ttf');
+}
+html, body  {
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url(Simple\ Shiny\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+.form {
+  background-color: transparent;
+  width: 50vh;
+  height: 70%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input:not([type='checkbox']), .switch {
+   margin-bottom: 1rem;
+ }
+
+h1 {
+  color: white;
+  margin-bottom: 3rem;
+  font-family: 'Quicksand';
+  font-size: 29px;
+}
+
+#name-school {
+  color: #ec3351;
+}
+
+.cont-date {
+  margin-bottom: 1.2rem;
+}
+
+.ocultar {
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand';
+  visibility: hidden;
+  color: #ec3351;
+}
+
+.cond-btt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+=================================
+=========== FIN REGISTRO ========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============= ALERT =============
+=================================
+*/
+
+
+
+/*
+=================================
+=========== FIN ALERT ========
+=================================
+*/
+
+/* ---------------------------------------------------- */
+
+/*
+=================================
+============= MEDIA =============
+=================================
+*/
+
+@media (max-width: 320px) {
+
+  .main {
+    display: flex;
+    background-image: url('Simple\ Shiny\ \(1\).svg');
+    width: 100%;
+  
+  }
+
+  form {
+    background-color: transparent;
+    width: 80%;
+    height: 70%;
+  }
+
+  h1 {
+    color: white;
+    margin-bottom: 1rem;
+    font-family: 'Quicksand';
+    font-size: 29px;
+  }
+
+  .ocultar {
+    margin-top: 0lpx;
+    width: 235px;
+  }
+  
+  .switch-content {
+    margin: 16px 0px 16px 0px;
+  }
+
+}
+/*
+=================================
+=========== FIN mMEDIA ==========
+=================================
+*/
