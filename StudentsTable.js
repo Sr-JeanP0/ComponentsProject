@@ -111,14 +111,23 @@ window.addEventListener('load', function() {
 // verificamos si el checkbox principal esta chequeado
 // si es asi tomara a los elementos con el id checkboxes y su  estado cambiara a checked
 // tambien
-const CheckboxP = document.getElementById('checkPro');
-const checkeds = document.getElementById('checkboxes');
+// const CheckboxP = document.getElementById('checkPro');
+// const checkeds = document.getElementById('checkboxes');
 
-if (CheckboxP.checked) {
-  console.log('El checkbox está marcado');
-} else {
-  console.log('El checkbox no está marcado');
-}
+// if (CheckboxP.checked) {
+//   console.log('El checkbox está marcado');
+// } else {
+//   console.log('El checkbox no está marcado');
+// }
+
+const CheckboxP = document.getElementById('checkP');
+const Checkboxes = document.getElementById('checkboxes');
+
+CheckboxP.onclick = function() {
+  for (let i = 0; i < secondaryCheckboxes.length; i++) {
+    Checkboxes[i].checked = CheckboxP.checked;
+  }
+};
 
 /*
 =================================
