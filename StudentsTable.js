@@ -1,12 +1,12 @@
-//Creamos una lista con los datos que recibira nuestra tabla
+//Creamos una lista con los datos que recibira nuestrceldaCheckboxa tabla
 const estudiantes = [
-  { nombre: 'Juan', edad: 25, curso: 'Matemáticas', telefono: '1234567890' },
-  { nombre: 'Andres', edad: 30, curso: 'Historia', telefono: '0987654321' },
-  { nombre: 'Pedro', edad: 20, curso: 'Inglés', telefono: '564646464' },
-  { nombre: 'Marcela', edad: 20, curso: 'Español', telefono: '333333333'},
-  { nombre: 'Massi', edad: 22, curso: 'Geografia', telefono: '165489165' },
-  { nombre: 'Ana', edad: 201, curso: 'Geometria', telefono: '61566511' },
-  { nombre: 'Joan', edad: 56, curso: 'Algebra', telefono: '15646444'}
+  { nombre: 'Juan', edad: 25, curso: 'Matemáticas', telefono: 52156465 },
+  { nombre: 'Andres', edad: 30, curso: 'Historia', telefono: 5648615616 },
+  { nombre: 'Pedro', edad: 20, curso: 'Inglés', telefono: 156413165 },
+  { nombre: 'Marcela', edad: 20, curso: 'Español', telefono: 656465113 },
+  { nombre: 'Massi', edad: 22, curso: 'Geografia', telefono: 6015665 },
+  { nombre: 'Ana', edad: 201, curso: 'Geometria', telefono: 14564121 },
+  { nombre: 'Joan', edad: 56, curso: 'Algebra', telefono: 654451325 }
 ];
 
 //tomamos el cuerpo de la tabla para poder introducir los datos en la misma.

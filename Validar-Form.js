@@ -23,6 +23,8 @@ function validarFormulario() {
   var errorD = document.getElementById('ocultarD');
   var errorE = document.getElementById('ocultarE');
   var nombre = document.getElementById("nombre-id");
+  var terms = document.getElementById('terminos');
+  var errorTerms = document.getElementById('ocultarTerms');
   
   if(nombre.value === '') { 
     error.style.visibility = 'visible';
@@ -30,6 +32,7 @@ function validarFormulario() {
   } else {
       if(regexNombre.test(nombre.value)) { 
         console.log('bien nombre');
+        error.style.visibility = 'hidden';
         nombre = true;
       } else {
           error.style.visibility = 'visible';
@@ -45,6 +48,7 @@ function validarFormulario() {
   } else {
       if(regexApellido.test(apellido.value)) {
         console.log('bien apellido');
+        errorA.style.visibility = 'hidden';
         apellido = true;
       } else {
         errorA.style.color = 'red';
@@ -60,6 +64,7 @@ function validarFormulario() {
     } else {  
         if(regexTelefono.test(telefono.value)) {
           telefono = true;
+          errorT.style.visibility = 'hidden';
           console.log('bien telefono');
         } else {
           errorT.style.visibility = 'visible';
@@ -75,6 +80,7 @@ function validarFormulario() {
     } else {      
         if(regexDireccion.test(direccion.value)) {
           direccion = true;
+          errorD.style.visibility = 'hidden';
           console.log('bien dirrecion');
         } else {
           errorD.style.visibility = 'visible';
@@ -92,6 +98,7 @@ function validarFormulario() {
   } else {
       if(regexEmail.test(email.value)) {
         email = true;
+        errorE.style.visibility = 'hidden';
         console.log('bien email');
       } else {
           errorE.style.visibility = 'visible';
@@ -100,9 +107,20 @@ function validarFormulario() {
           console.log('Introduce bien el email');
         }
     }
+
+  if(terms.checked ) {
+    console.log('bien');
+    errorTerms.style.visibility = 'hidden';
+    terms = true;
+  } else {
+    errorTerms.style.visibility = 'visible';
+    errorTerms.style.color = 'red';
+    console.log('acepta los terminos');
+  }
     
   // si todas las variables han sido true la pantalla llevara la vista a nuestra tabla
-  if(nombre == true && apellido == true && telefono == true && direccion == true && email == true) {
+  if(nombre == true && apellido == true && telefono == true && direccion == true && email == true && terms == true) {
     window.location.href = "StudentsTable.html";
   }
 }
+

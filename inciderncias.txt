@@ -1,0 +1,4 @@
+1. bloquear el Drag and drop en el formulario X
+2. Terminar la validación del formulario (toggle validacion, max-length todos los campos x ) 
+3. Tipo de letra en todo el flujo x
+4. Checkbox colocar estilo cuadrados x

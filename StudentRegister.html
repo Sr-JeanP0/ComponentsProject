@@ -9,7 +9,6 @@
   <title>Registro de estudiante</title>
 </head>
 <body>
-
   <main class="main">  
 
       <div class="alerta"></div>
@@ -18,31 +17,31 @@
         <h1>COLEGIO RED <span id="name-school">5G</span> </h1>
         
         <div class="nombre-estudiante">
-          <input type="text" class="input-nombre" id="nombre-id" required >
+          <input type="text" class="input-nombre" id="nombre-id" required  onDragOver="return false;"  maxlength="10">
           <label id="nombre">Nombre</label>
         </div> 
         <label for="" class="ocultar" id="ocultarN">Nombre invalido</label>
         
         <div class="apellido-estudiante">
-          <input type="text" class="input-apellido" id="apellido-id" required >
+          <input type="text" class="input-apellido" id="apellido-id" required onDragOver="return false;"  maxlength="23">
           <label id="apellido">Apellido</label>
         </div> 
         <label for="" class="ocultar" id="ocultarA">Apellido invalido</label>
         
         <div class="cont-telefono">
-          <input type="number" class="input-telefono" id="telefono-id" required >
+          <input type="number" class="input-telefono" id="telefono-id" required onDragOver="return false;" max="10">
           <label id="telefono">Telefono</label>
         </div> 
         <label for="" class="ocultar" id="ocultarT">Numero invalido</label>
         
         <div class="cont-direccion">
-          <input type="text" class="input-direccion" id="direccion-id" required >
+          <input type="text" class="input-direccion" id="direccion-id" required onDragOver="return false;" maxlength="26">
           <label id="direccion">Direccion</label>
         </div> 
         <label for="" class="ocultar" id="ocultarD">Direccion invalido</label>
         
         <div class="cont-email">
-          <input type="text" class="input-email" id="email-id" required >
+          <input type="text" class="input-email" id="email-id" required onDragOver="return false;" maxlength="25">
           <label id="email">Email</label>
         </div>
         <label for="" class="ocultar" id="ocultarE">Email invalido</label>
@@ -51,11 +50,12 @@
   
         <div class="switch-content">  
           <label class="switch"> 
-            <input type="checkbox"> 
+            <input type="checkbox" id="terminos"> 
             <span class="slider"></span> 
           </label>
           Acepto terminos y condiciones
         </div> 
+        <label for="" class="ocultar" id="ocultarTerms">No olvides los terminos</label>
           
           <button class="send-form" onclick="validarFormulario()">Registrar</button>
         </div>
