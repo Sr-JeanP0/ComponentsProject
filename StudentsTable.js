@@ -1,10 +1,10 @@
 //Creamos una lista con los datos que recibira nuestra tabla
 const estudiantes = [
   { nombre: 'Juan', edad: 25, curso: 'Matemáticas', telefono: '1234567890' },
-  { nombre: 'María', edad: 30, curso: 'Historia', telefono: '0987654321' },
+  { nombre: 'Andres', edad: 30, curso: 'Historia', telefono: '0987654321' },
   { nombre: 'Pedro', edad: 20, curso: 'Inglés', telefono: '564646464' },
   { nombre: 'Marcela', edad: 20, curso: 'Español', telefono: '333333333'},
-  { nombre: 'Kenis', edad: 38, curso: 'Geografia', telefono: '165489165' },
+  { nombre: 'Massi', edad: 22, curso: 'Geografia', telefono: '165489165' },
   { nombre: 'Ana', edad: 201, curso: 'Geometria', telefono: '61566511' },
   { nombre: 'Joan', edad: 56, curso: 'Algebra', telefono: '15646444'}
 ];
@@ -36,13 +36,17 @@ if(estudiantes.length === 0){
       const fila = document.createElement('tr');
       const celdaCheckbox = document.createElement('td');
       const checkboxes = document.createElement('input');
+      const labels = document.createElement('label');
 
       // les asignamos el tipo de input que es
       // y un id
       checkboxes.type = 'checkbox';
-      checkboxes.id = 'checkboxes';
+      checkboxes.className = 'checkboxes';
+      celdaCheckbox.className = 'primero';
+
 
       celdaCheckbox.appendChild(checkboxes);
+      celdaCheckbox.appendChild(labels);
       fila.appendChild(celdaCheckbox);
 
       const celdaNombre = document.createElement('td');
@@ -108,30 +112,24 @@ window.addEventListener('load', function() {
 =================================
 */
 
-// verificamos si el checkbox principal esta chequeado
-// si es asi tomara a los elementos con el id checkboxes y su  estado cambiara a checked
-// tambien
-// const CheckboxP = document.getElementById('checkPro');
-// const checkeds = document.getElementById('checkboxes');
+// tomamos el checkbox principal y los secundarios mediante su id y su clase respectivamente
+// luego, le asignamos al checkbox principal una funcion, al checkbox principal 
+// recibir el evento de click iterara por todos los checkboxes secundarios y les cambiara su estado 
+// al mismo tiempo 
 
-// if (CheckboxP.checked) {
-//   console.log('El checkbox está marcado');
-// } else {
-//   console.log('El checkbox no está marcado');
-// }
+const checkboxP = document.getElementById('checkPro');
+var checkboxes = document.getElementsByClassName("checkboxes");
 
-const CheckboxP = document.getElementById('checkP');
-const Checkboxes = document.getElementById('checkboxes');
-
-CheckboxP.onclick = function() {
-  for (let i = 0; i < secondaryCheckboxes.length; i++) {
-    Checkboxes[i].checked = CheckboxP.checked;
+checkboxP.addEventListener("click", function() {
+  for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].checked = checkboxP.checked;
   }
-};
+});
 
 /*
 =================================
 ======== FIN SELECT ALL =========
 =================================
 */
+
 
